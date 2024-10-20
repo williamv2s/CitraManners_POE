@@ -5,28 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CitraManners</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <section class="header">
 <nav>
-    <a href="citramanners.html"><img src="image_2024-10-17_210541930-removebg-preview.png"></a>
-    <div class="nav-links">
-        <i class="fa-solid fa-xmark"></i>
+    <a href="citramanners.html"><img src="image-removebg-preview (2).png"></a>
+    <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
         <ul>
             <li><a href="">HOME</a></li>
             <li><a href="">RULES</a></li>
+            <li><a href="">AWARDS</a></li>
+            <li><a href="">ABOUT</a></li>
         </ul>
     </div>
-    <i class="fa-solid fa-bars"></i>
+    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
 </nav>
 
 <div class="text-box">
-    <h1>Rules and Manners</h1>
-    <p>Sekolah Citra Berkat Citra Indah memiliki beberapa peraturan dan tata tertib. <br>Serta bobot poin untuk Pelanggaran, dan Penghargaan.</p>
-    <a href="" class="hero-btn">Check Out The Rules!</a>
+    <h1>Rules and Awards</h1>
+    <p>Every School has their own Rules and Awards, Our School does too. <br>Check them out in this Website! </p>
+    <a href="" class="hero-btn">See The Rules!</a>
 </div>
 
 </section>
+
+<!-----Creators----->
+
+<section class="creators">
+    <h1>Creators of this Website</h1>
+
+    <div class="row">
+        <div class="creators-col">
+            <h3>William Saputra</h3>
+        </div>
+        <div class="creators-col">
+            <h3>Lionel Lucio</h3>
+        </div>
+    </div>
+</section>
+
+<!-----JavaScript Toggle Menu----->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+
+
 </body>
 </html>
