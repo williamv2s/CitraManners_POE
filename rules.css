@@ -219,3 +219,7 @@ h3{
 #accordion label + input[type="radio"]:checked + .content{
     max-height: 400px;
 }
+.header2{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(banner-scb-citra-indah-jonggol.jpg);
+    background-size: cover;
+}
